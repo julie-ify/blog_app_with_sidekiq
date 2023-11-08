@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/users', to: 'users#index'
+  root 'users#index'
 
 	resources :users, only: [:create, :show, :new] do
 		resources :posts, only: [:create, :show, :index, :new]

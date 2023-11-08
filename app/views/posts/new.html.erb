@@ -1,0 +1,7 @@
+<%= form_for @post, url: user_posts_url do |f| %>
+
+	Title: <%= f.text_field :title %>
+	body: <%= f.text_field :body %>
+	<%= f.submit "Submit" %>
+
+<% end %>

@@ -1,0 +1,13 @@
+<h4>
+	<%= @user.username %>
+	<ul>
+		<% @posts.each do |post| %>
+			<li>
+				<p><%= post.title %></p>
+				<p><%= post.body %></p>
+			</li>
+		<% end %>
+	</ul>
+
+	<p><%= link_to 'New Post', new_user_post_path %></p>
+</h4>
